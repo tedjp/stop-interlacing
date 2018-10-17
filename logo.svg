@@ -1,0 +1,15 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="180" height="110">
+  <defs>
+    <filter id="fInterlace">
+      <feFlood width="1" height="1" flood-color="red" result="pixel"/>
+      <feOffset in="pixel" dy="1" result="tile"/>
+      <feTile in="tile" result="fields"/>
+      <feDisplacementMap in="SourceGraphic" in2="fields" scale="2" xChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g id="text" filter="url(#fInterlace)">
+  <text y="60" font-size="64" textLength="160">Stop</text>
+  <text y="100" textLength="160" lengthAdjust="spacing" font-size="28">Interlacing</text>
+</g>
+</svg>
