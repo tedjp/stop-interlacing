@@ -1,5 +1,5 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="180" height="110">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="162" height="115" viewBox="0 0 162 115">
   <defs>
     <filter id="fInterlace">
       <feFlood width="1" height="1" flood-color="red" result="pixel"/>
