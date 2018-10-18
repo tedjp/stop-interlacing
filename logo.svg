@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="162" height="115" viewBox="0 0 162 115">
-  <style>
+  <style type="text/css">
     text {
       font-family: sans-serif;
     }
@@ -9,8 +10,8 @@
     <filter id="fInterlace">
       <feFlood width="1" height="1" flood-color="red"/>
       <feOffset dy="1"/>
-      <feTile/>
-      <feDisplacementMap in="SourceGraphic" scale="2" xChannelSelector="G"/>
+      <feTile result="int"/>
+      <feDisplacementMap in="SourceGraphic" in2="int" scale="2" xChannelSelector="G"/>
     </filter>
   </defs>
   <g id="text" filter="url(#fInterlace)">
