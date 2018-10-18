@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>Stop Interlacing</title>
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+
+    h1 img {
+      width: 320px;
+      height: 160px;
+      border: 1px dashed black;
+    }
+  </style>
+ </head>
+ <body>
+   <h1><img src="logo.svg" alt="Stop Interlacing"/></h1>
+   <h2 id="what">What is interlacing?</h2>
+   <p>Interlacing is a way of transmitting video half a frame at a time.
+   It's a relic from the days of analog TV and low-compression codecs,
+   where a reasonably good picture could be transmitted using about half
+   the bandwidth by transmitting alternating lines of each frame.</p>
+
+   <h2 id="problem">The problem with interlacing</h2>
+   <p>Modern displays refresh the entire picture in one go. When the source
+   video is interlaced it only contains half a new picture. The display
+   either retains the existing half of the picture, resulting in a
+   "comb" effect on the edges of objects, or it employs
+   imperfect deinterlacing algorithms to try to reconstruct a full frame.
+   Having only half the picture each frame means the deinterlacer is always
+   trying to reconstruct detail for which it has no information, and therefore
+   the picture looks worse than a full-frame (progressive) picture.</p>
+
+   <p>The effect is especially egregious for sports content where the object
+   of focus tends to be a small, fast-moving object. As it moves across the
+   screen, a ball is only half-displayed at a time. Moving fast enough, the
+   deinterlacer won't identify the two half-balls as the same moving object
+   (because it travels so far between frames) and the ball will be
+   half-invisible.</p>
+
+   <h2 id="solution">The solution: progressive video</h2>
+   <p>Progressive, full-frame video doesn't have the problem of trying to
+   reconstruct missing information. Therefore video providers should commit
+   to an end-to-end progressive video pipeline.
+   For example 2160p, 1080p or even 720p. 1080i is insufficient, and especially
+   poor for sports content.</p>
+
+   <h2 id="more">More information</h2>
+   <ul>
+     <li><a href="https://www.youtube.com/watch?v=H_o5h5SK_70">Interlaced vs.
+             Progressive (Techquickie, YouTube)</a></li>
+     <li><a
+       href="https://www.businessinsider.com/1080p-vs-1080i-netflix-cable-tv-2017-8">1080p
+       vs 1080: what's the difference? (Business Insider)</a></li>
+     <li><a href="https://en.wikipedia.org/wiki/Interlaced_video">Interlaced
+             video (Wikipedia)</a></li>
+   </ul>
+ </body>
+ </html>
