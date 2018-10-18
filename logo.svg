@@ -2,10 +2,10 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="162" height="115" viewBox="0 0 162 115">
   <defs>
     <filter id="fInterlace">
-      <feFlood width="1" height="1" flood-color="red" result="pixel"/>
-      <feOffset in="pixel" dy="1" result="tile"/>
-      <feTile in="tile" result="fields"/>
-      <feDisplacementMap in="SourceGraphic" in2="fields" scale="2" xChannelSelector="G"/>
+      <feFlood width="1" height="1" flood-color="red"/>
+      <feOffset dy="1"/>
+      <feTile/>
+      <feDisplacementMap in="SourceGraphic" scale="2" xChannelSelector="G"/>
     </filter>
   </defs>
   <g id="text" filter="url(#fInterlace)">
