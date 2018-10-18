@@ -9,7 +9,7 @@
     </filter>
   </defs>
   <g id="text" filter="url(#fInterlace)">
-  <text y="60" font-size="64" textLength="160">Stop</text>
-  <text y="100" textLength="160" lengthAdjust="spacing" font-size="28">Interlacing</text>
-</g>
+    <text y="60" font-size="64" textLength="160">Stop</text>
+    <text y="100" textLength="160" lengthAdjust="spacing" font-size="28">Interlacing</text>
+  </g>
 </svg>
